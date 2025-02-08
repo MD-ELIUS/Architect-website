@@ -1,0 +1,340 @@
+body {
+   border:box-sizing;
+}
+
+  /* Header Section starts here */
+
+header {
+  display: flex;
+  background-color: rgba(255, 254, 252, 1);
+  position: sticky;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: center;
+  border:none;
+  box-shadow:  0px 15px 6px -15px rgba(17, 17, 17, 0.5);
+  
+  top:2px;
+  
+}
+
+  #menu_icon {
+    
+    font-size: 4rem;
+    display: none;
+  }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  gap:70px;
+  padding-right:15px;
+  float: right;
+}
+
+ul li {
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+ul li:active {
+  background-color: rgba(93, 161, 233, 1);
+  transform:scale(1.1);
+}
+
+.header_text {
+  padding-left: 15px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+  /* Header Section Ends here */
+
+
+
+  /* Banner Section starts here */
+
+.banner {
+  position:relative;
+  text-align: center;
+  color:white;
+  margin-bottom: 6rem;
+}
+
+.banner_img {
+  
+  width:100%;
+  height: 100%;
+}
+
+.banner_text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size:40px;
+  text-align: center;
+  display: flex;
+  gap:20px;
+  
+}
+
+.banner_bold_text {
+  display: inline-block;
+  text-align: center;
+ padding-left: 10px;
+ padding-right: 10px; 
+ background-color: rgba(30, 29, 29, 0.9);
+ 
+}
+  /* Banner Section Ends here */
+
+
+
+
+  /* Project Section starts here */
+
+.project_heading {
+  font-size: 25px;
+  margin-left: 1.5rem;
+  margin-bottom: 20rem;
+}
+
+.hr {
+  margin-top:1.5rem;
+  margin-left:1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom:4rem;
+}
+
+.project_imgs {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+  row-gap:2rem;
+  
+  margin-left:1.8rem;
+  
+row-gap: 1.5rem;
+
+margin-bottom: 6rem;
+  
+}
+
+.project-img {
+  
+  position: relative;
+}
+
+.project_img {
+ width:93%;
+ 
+}
+
+.project-img button {
+  padding:1rem 1rem;
+  position: absolute;
+  top:8px;
+  left:16px;
+  background-color: rgba(0, 0, 0, 1);
+  color:white;
+top:0;
+left:0;
+font-size: 17px;
+}
+
+  /* Project Section Ends here */
+  
+  
+  
+  /* About Section starts here */
+
+.about-section {
+  margin-bottom: 6rem;
+}
+.about_hr {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+.about_desc {
+padding-left:1.5rem;
+padding-right:1.5rem;
+line-height: 1.5rem;
+margin-bottom: 3rem;
+}
+
+
+.cards {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap:2rem;
+  column-gap:2rem;
+    margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  filter: grayscale(75%);
+}
+
+.card_img {
+  width:100%;
+}
+
+.card_button {
+  width:100%;
+  padding:0.5rem;
+  border:none;
+  transition: background-color 0.01s;
+}
+
+.card_button:active {
+  background-color: rgba(61, 126, 218, 1)
+} 
+
+  /* About Section Ends here */
+
+
+
+
+  /* Contact Section starts here */
+
+.contact-section {
+  margin-bottom: 3rem;
+}
+
+.contact_desc {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+}
+
+.form_input {
+  
+  border-radius: 0.2rem;
+  padding:0.7rem;
+}
+
+.form_submit {
+  width:20%;
+  margin-top: 1rem;
+  padding:0.7rem;
+  color:white;
+  background-color: #000000;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.form_submit:active {
+  transform: scale(1.1);
+  background-color:rgba(15, 163, 102, 0.5);
+}
+
+  /* Contact Section Ends here */
+
+
+.map-img {
+  width:95%;
+  margin-left: 1.5rem;
+ margin-right:1.5rem;
+ margin-bottom:1rem;
+}
+
+
+  /* footer Section starts here */
+
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: #000000;
+  padding:2rem;
+  margin:0;
+}
+
+a {
+  
+  color:white;
+}
+
+  /* footer Section Ends here */
+
+
+
+
+  /* Responsive Design starts here */
+
+@media only screen and (max-width: 750px) {
+  
+  
+ header {
+   flex-direction: column;
+   justify-content: center;
+   column-gap:0rem;
+   align-items: center;
+ }
+  #menu_icon {
+    font-size: 2rem;
+    display: block;
+  }
+  .hidden {
+  display:none;
+  
+}
+
+ul  {
+  gap:30px
+}
+
+ /* .banner_text {
+   flex-direction:column;
+ } */
+  
+.project_imgs
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.banner_span {
+  display: none;
+}
+  
+ .cards {
+     display: flex;
+  flex-direction: column;
+  }
+  
+  .form_submit {
+  width: 40%;
+  font-size: 0.9rem;
+  }
+  
+.map-img {
+  width:87%;
+}
+  
+ }
+  
+
+  /* Responsive Design s here */
+
